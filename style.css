@@ -135,3 +135,24 @@ footer { text-align: center; padding: 30px; border-top: 1px solid #eee; color: #
   .hero-btns { justify-content: center; }
   .hero h1 { font-size: 3.4rem; }
 }
+
+/* Full photo, square clean frame */
+.frame {
+  aspect-ratio: auto;
+  height: auto;
+  max-width: 320px;
+  border-radius: 0;
+  border: 2px solid var(--gold);
+  padding: 12px;
+  background: #fff;
+}
+.frame img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+  display: block;
+}
+@media (max-width: 800px) {
+  .frame { max-width: 260px; }
+}
