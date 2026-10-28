@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Somasundar | Portfolio</title>
+  <title>Soma | Web Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -11,57 +11,93 @@
 </head>
 <body>
 
+  <div id="progress"></div>
+
   <nav id="navbar">
-    <a href="#home" class="logo">Somasundar</a>
+    <a href="#home" class="logo">SOMA</a>
     <button id="menu-btn" aria-label="Menu">&#9776;</button>
     <ul id="menu">
+      <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#journey">Journey</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <section id="home" class="hero">
-    <p class="small">Welcome to my portfolio</p>
-    <h1>Somasundar</h1>
-    <h2><span id="typed"></span><span class="cursor">|</span></h2>
-    <a href="#projects" class="btn">View My Work</a>
+    <div class="hero-text">
+      <p class="small">Hello, I am</p>
+      <h1>Soma</h1>
+      <h2><span id="typed"></span><span class="cursor">|</span></h2>
+      <p class="intro">I design and build elegant, responsive websites that look beautiful on every screen.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
+      </div>
+      <p class="social"><a href="https://github.com/soma0912" target="_blank">GitHub</a> &nbsp;|&nbsp; <a href="mailto:somasundar200922@gmail.com">Email</a></p>
+    </div>
+    <div class="hero-photo" id="tilt">
+      <div class="frame"><img src="images/soma.jpg" alt="Soma"></div>
+    </div>
   </section>
 
-  <section id="about" class="reveal">
+  <section id="about" class="block reveal">
     <h3 class="title">About Me</h3>
     <div class="line"></div>
     <p class="center-text">
-      I am a passionate beginner developer who loves building elegant,
-      useful websites. I am always learning and growing every day.
+      I am a passionate web developer who loves turning ideas into elegant,
+      useful websites. I am always learning new things and improving my craft every day.
     </p>
+    <div class="stats">
+      <div><span class="count" data-target="10">0</span><small>+</small><p>Projects</p></div>
+      <div><span class="count" data-target="2">0</span><small>+</small><p>Years Learning</p></div>
+      <div><span class="count" data-target="100">0</span><small>%</small><p>Dedication</p></div>
+    </div>
   </section>
 
-  <section id="skills" class="reveal">
+  <section id="skills" class="block reveal">
     <h3 class="title">Skills</h3>
     <div class="line"></div>
-    <div class="grid">
-      <div class="card"><h4>HTML</h4><p>Structure of the web</p></div>
-      <div class="card"><h4>CSS</h4><p>Styling and design</p></div>
-      <div class="card"><h4>JavaScript</h4><p>Interactivity</p></div>
-      <div class="card"><h4>Git</h4><p>Version control</p></div>
+    <div class="bars">
+      <div class="skill"><div class="skill-top"><span>HTML</span><span>90%</span></div><div class="bar"><span data-level="90"></span></div></div>
+      <div class="skill"><div class="skill-top"><span>CSS</span><span>85%</span></div><div class="bar"><span data-level="85"></span></div></div>
+      <div class="skill"><div class="skill-top"><span>JavaScript</span><span>70%</span></div><div class="bar"><span data-level="70"></span></div></div>
+      <div class="skill"><div class="skill-top"><span>Git &amp; GitHub</span><span>75%</span></div><div class="bar"><span data-level="75"></span></div></div>
     </div>
   </section>
 
-  <section id="projects" class="reveal">
+  <section id="projects" class="block reveal">
     <h3 class="title">Projects</h3>
     <div class="line"></div>
+    <div class="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="web">Websites</button>
+      <button class="filter" data-filter="design">Designs</button>
+    </div>
     <div class="grid">
-      <div class="card"><h4>Project One</h4><p>A short description of your first project.</p></div>
-      <div class="card"><h4>Project Two</h4><p>A short description of your second project.</p></div>
-      <div class="card"><h4>Project Three</h4><p>A short description of your third project.</p></div>
+      <div class="card" data-cat="web"><h4>Portfolio Website</h4><p>This very website, built with HTML, CSS and JavaScript.</p></div>
+      <div class="card" data-cat="web"><h4>Landing Page</h4><p>A clean, responsive landing page for a small business.</p></div>
+      <div class="card" data-cat="design"><h4>Brand Layout</h4><p>An elegant layout concept with royal typography.</p></div>
+      <div class="card" data-cat="design"><h4>UI Concept</h4><p>A mobile-first interface design idea.</p></div>
     </div>
   </section>
 
-  <section id="contact" class="reveal">
+  <section id="journey" class="block reveal">
+    <h3 class="title">My Journey</h3>
+    <div class="line"></div>
+    <div class="timeline">
+      <div class="item"><h4>Started Learning Web Development</h4><p>Began with HTML and CSS in Termux.</p></div>
+      <div class="item"><h4>Learned JavaScript</h4><p>Made pages interactive and alive.</p></div>
+      <div class="item"><h4>Published on GitHub</h4><p>Launched my first portfolio online.</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="block reveal">
     <h3 class="title">Contact</h3>
     <div class="line"></div>
+    <p class="center-text">Have a project in mind? Let us talk.</p>
     <form id="contact-form">
       <input type="text" id="name" placeholder="Your Name">
       <input type="email" id="email" placeholder="Your Email">
@@ -72,7 +108,7 @@
   </section>
 
   <footer>
-    <p>&copy; <span id="year"></span> Somasundar. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Soma. All rights reserved.</p>
   </footer>
 
   <button id="top-btn" aria-label="Back to top">&uarr;</button>
