@@ -3,19 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>1web</title>
+  <title>Somasundar | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to 1web</h1>
-    <p>My first simple website.</p>
-  </header>
-  <main>
-    <p>Built in Termux, pushed to GitHub.</p>
-  </main>
+
+  <nav id="navbar">
+    <a href="#home" class="logo">Somasundar</a>
+    <button id="menu-btn" aria-label="Menu">&#9776;</button>
+    <ul id="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <p class="small">Welcome to my portfolio</p>
+    <h1>Somasundar</h1>
+    <h2><span id="typed"></span><span class="cursor">|</span></h2>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <section id="about" class="reveal">
+    <h3 class="title">About Me</h3>
+    <div class="line"></div>
+    <p class="center-text">
+      I am a passionate beginner developer who loves building elegant,
+      useful websites. I am always learning and growing every day.
+    </p>
+  </section>
+
+  <section id="skills" class="reveal">
+    <h3 class="title">Skills</h3>
+    <div class="line"></div>
+    <div class="grid">
+      <div class="card"><h4>HTML</h4><p>Structure of the web</p></div>
+      <div class="card"><h4>CSS</h4><p>Styling and design</p></div>
+      <div class="card"><h4>JavaScript</h4><p>Interactivity</p></div>
+      <div class="card"><h4>Git</h4><p>Version control</p></div>
+    </div>
+  </section>
+
+  <section id="projects" class="reveal">
+    <h3 class="title">Projects</h3>
+    <div class="line"></div>
+    <div class="grid">
+      <div class="card"><h4>Project One</h4><p>A short description of your first project.</p></div>
+      <div class="card"><h4>Project Two</h4><p>A short description of your second project.</p></div>
+      <div class="card"><h4>Project Three</h4><p>A short description of your third project.</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="reveal">
+    <h3 class="title">Contact</h3>
+    <div class="line"></div>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name">
+      <input type="email" id="email" placeholder="Your Email">
+      <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+      <button type="submit" class="btn">Send Message</button>
+      <p id="form-msg"></p>
+    </form>
+  </section>
+
   <footer>
-    <p>&copy; 2026 soma0912</p>
+    <p>&copy; <span id="year"></span> Somasundar. All rights reserved.</p>
   </footer>
+
+  <button id="top-btn" aria-label="Back to top">&uarr;</button>
+  <script src="script.js"></script>
 </body>
 </html>
